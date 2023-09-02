@@ -1,0 +1,284 @@
+/*
+    0-640=sm
+    640-768=md
+    768-1024=lg
+    1024-1280=xl
+    1280-1536=2xl
+    
+    
+    
+    
+    */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000057;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .overlay form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem; }
+    .overlay form input {
+      width: 70%;
+      margin-top: 1rem;
+      background-color: #f1f5f9;
+      border: none;
+      font-size: 1.3rem;
+      padding: 1rem;
+      border-radius: 8px; }
+      @media screen and (max-width: 768px) {
+        .overlay form input {
+          width: 90%; } }
+      .overlay form input:focus {
+        outline: none; }
+      .overlay form input::placeholder {
+        text-transform: capitalize; }
+  .overlay__box {
+    width: 68.4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 8px; }
+    @media screen and (max-width: 768px) {
+      .overlay__box {
+        width: 90%; } }
+    .overlay__box .intro-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem; }
+    .overlay__box svg {
+      margin-right: 1rem; }
+    .overlay__box h2 {
+      font-size: 1.4rem;
+      text-transform: capitalize; }
+
+.btn-box {
+  display: flex;
+  width: 70%;
+  margin-top: 3rem;
+  justify-content: flex-end; }
+  @media screen and (max-width: 380px) {
+    .btn-box {
+      width: 90%;
+      flex-direction: column;
+      align-items: center; } }
+  .btn-box .appbtn {
+    width: 10rem;
+    border: 1px solid #04457b;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer; }
+    @media screen and (max-width: 380px) {
+      .btn-box .appbtn {
+        margin-top: 1rem; } }
+  .btn-box .btn-cancel {
+    color: #000;
+    margin-right: 1rem;
+    background-color: #fff; }
+    @media screen and (max-width: 380px) {
+      .btn-box .btn-cancel {
+        margin-right: 0; } }
+  .btn-box .btn-submit {
+    background-color: #04457b;
+    color: #fff; }
+
+.app-deletebtn {
+  cursor: pointer; }
+
+.loading_box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  border-radius: 8px; }
+  .loading_box p {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    font-weight: 700; }
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  .auth__container .heading__main {
+    color: #1d293f;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize; }
+    @media screen and (max-width: 640px) {
+      .auth__container .heading__main {
+        font-size: 2rem; } }
+  .auth__container .heading__sub {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 3.9rem;
+    font-weight: 500;
+    color: #696871; }
+    @media screen and (max-width: 640px) {
+      .auth__container .heading__sub {
+        font-size: 1.2rem;
+        margin-top: 7px;
+        line-height: 1.2rem;
+        text-align: center; } }
+
+.form__container {
+  margin-top: 5rem; }
+  @media screen and (max-width: 640px) {
+    .form__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
+      width: 100%; } }
+
+.form__box {
+  width: 41.3rem;
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0; }
+  @media screen and (max-width: 640px) {
+    .form__box {
+      width: 90%; } }
+  .form__box .mail_icon {
+    font-size: 2rem;
+    margin-right: 5px; }
+  .form__box .password_icon {
+    font-size: 2rem;
+    margin-right: 5px;
+    cursor: pointer; }
+  .form__box input {
+    background-color: #f1f5f9;
+    width: 39rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #475569;
+    border: none; }
+    @media screen and (max-width: 640px) {
+      .form__box input {
+        width: 100%; } }
+    .form__box input:focus {
+      outline: none; }
+    .form__box input::placeholder {
+      text-transform: capitalize; }
+
+.btn {
+  width: 41.3rem;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #04457b;
+  font-size: 2.1rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid transparent; }
+  @media screen and (max-width: 640px) {
+    .btn {
+      width: 90%; } }
+  .btn:hover {
+    background-color: transparent;
+    color: #04457b;
+    border: 1px solid #04457b; }
+
+.routebox {
+  margin-top: 1rem;
+  font-size: 1.2rem; }
+  .routebox a:link, .routebox a:visited {
+    text-decoration: none;
+    color: #04457b;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s; }
+  .routebox a:hover, .routebox a:active {
+    border-bottom: 1px solid #04457b; }
+
+.error_text {
+  font-size: 1.2rem;
+  color: red; }
+
+.toast {
+  font-size: 1.3rem; }
+
+.loader {
+  font-size: 1.2rem;
+  color: #fff; }
+
+.table__container {
+  padding: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .table__main {
+    overflow-x: auto;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden; } }
+
+.table__head {
+  background-color: #04457b;
+  display: flex;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: capitalize; }
+  .table__head--1 {
+    width: 25%; }
+
+.table__body {
+  display: flex;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid #04457b; }
+
+.intro__box {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end; }
+  .intro__box button {
+    padding: 9px 17px 9px 17px;
+    background-color: #04457b;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s; }
+    .intro__box button:hover {
+      background-color: transparent;
+      border: 1px solid #04457b;
+      color: #04457b; }

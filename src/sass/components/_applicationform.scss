@@ -1,0 +1,115 @@
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+    & input {
+      width: 70%;
+      margin-top: 1rem;
+      background-color: #f1f5f9;
+      border: none;
+      font-size: 1.3rem;
+      padding: 1rem;
+      border-radius: 8px;
+      @include respond(md) {
+        width: 90%;
+      }
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__box {
+    @include respond(md) {
+      width: 90%;
+    }
+    & .intro-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
+    & svg {
+      margin-right: 1rem;
+    }
+    & h2 {
+      font-size: 1.4rem;
+      text-transform: capitalize;
+    }
+    width: 68.4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 8px;
+  }
+}
+.btn-box {
+  display: flex;
+  width: 70%;
+  margin-top: 3rem;
+  justify-content: flex-end;
+
+  @include respond(xsm) {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & .appbtn {
+    width: 10rem;
+    border: 1px solid #04457b;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    @include respond(xsm) {
+      margin-top: 1rem;
+    }
+  }
+
+  & .btn-cancel {
+    color: #000;
+    margin-right: 1rem;
+    background-color: #fff;
+    @include respond(xsm) {
+      margin-right: 0;
+    }
+  }
+
+  & .btn-submit {
+    background-color: #04457b;
+    color: #fff;
+  }
+}
+
+.app-deletebtn {
+  cursor: pointer;
+}
+
+.loading_box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  border-radius: 8px;
+  & p {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    font-weight: 700;
+  }
+}
